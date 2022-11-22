@@ -1,5 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.from(".text", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+    scrub: 1,
+    ease: "expo"
+})
+
 gsap.to(".square", {
     scrollTrigger: {
         trigger: ".square",
@@ -71,6 +79,124 @@ gsap.to(".img1", {
       scrub: true,
     }, 
   });
+
+gsap.from(".h3", {
+    scrollTrigger:{
+        trigger: ".h2",
+        start: "50% 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2.5,
+    opacity: 0,
+    stagger: .5,
+    ease: "power2.out"
+});
+
+gsap.from(".pSection", {
+    scrollTrigger:{
+        trigger: ".pSection",
+        start: "top 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2.5,
+    opacity: 0,
+    stagger: .5,
+    ease: "power2.out"
+});
+
+gsap.from(".barra", {
+    scrollTrigger:{
+        trigger: ".barra",
+        start: "50% 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2,
+    opacity: 0,
+    ease: "power2.out"
+});
+
+gsap.to(".img2", {
+    yPercent: -50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".container5",
+      scrub: true,
+    }, 
+  });
+
+gsap.to(".img3", {
+    yPercent: -50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".container5",
+      scrub: true,
+    }, 
+  });
+
+gsap.from(".img2", {
+    scrollTrigger:{
+        trigger: ".img2",
+        start: "20% 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2,
+    opacity: 0,
+    stagger: .3,
+    ease: "power2.out"
+});
+
+gsap.from(".img3", {
+    scrollTrigger:{
+        trigger: ".img3",
+        start: "30% 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2,
+    opacity: 0,
+    stagger: .5,
+    ease: "power2.out"
+});
+
+gsap.from(".container6", {
+    scrollTrigger:{
+        trigger: ".container6",
+        start: "20% 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2,
+    opacity: 0,
+    ease: "power2.out"
+});
+
+gsap.from(".contacto", {
+    scrollTrigger:{
+        trigger: ".contacto",
+        start: "50% 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2,
+    opacity: 0,
+    ease: "power2.out"
+});
+
+gsap.from(".h4", {
+    scrollTrigger:{
+        trigger: ".h4",
+        start: "50% 70%",
+        toggleActions: "play none none none",
+    },
+    y: -50,
+    duration: 2,
+    opacity: 0,
+    ease: "power2.out"
+});
 
 
 
